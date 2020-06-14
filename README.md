@@ -6,17 +6,15 @@ b) analyse whether they’ve had a favourable or unfavourable effect on the over
 
 Dependencies:
 - dplyr
+- tidyverse
 - ineq
 - stats
 - ggplot2
 - ggrepel
 
 Steps for execution. 
-The attached compressed folder contains:
-- PDF document  (“explanation”) explaining the methodology followed to measure and decompose seasonality in this analysis;
-- A folder with the original data;
-- 3 scripts into which the analysis is organized, which must be executed in the following order:
+The analysys is organized in 3 scripts, which must be executed in the following order:
 analysis is organized in 3 scripts, which must be executed in the following order:
-  - preprocessing_data: it cleans and prepares to carry out the analysis. It takes the original data for each year (saved in the folder       “original_data”) and it produces a unique preprocessed dataset (exported to folder “preprocessed_data”).
+  - preprocessing_data: it cleans and prepares data to carry out the analysis. It takes the original data for each year (saved in the       folder “original_data”) and it produces a unique preprocessed dataset (exported to folder “preprocessed_data”).
   - generate_gini_index_table: this script carries out the main analysis over the preprocessed data, generating a table with data for all     variables and parameters above (Gini index, market share, Gini correlation, contribution to seasonality, RME, effect on seasonality) for   each country in every year (2000-2018), which is exported to folder “result_data”
   - visualize_data: this script offers several example of different alternatives to visualize the results of the data analysis.
